@@ -64,8 +64,8 @@
 (defun rae (word)
     (interactive (list (current-word t t)))
     (other-window 1)
-    (eww (format "https://dle.rae.es/?w=%s" word)))
-(define-key global-map (kbd "M-¿") 'rae)
+    (w3m (format "https://dle.rae.es/?w=%s" word)))
+(define-key global-map (kbd "C-x ¿") 'rae)
 
 ;; ==============================
 ;; Development Setup - Python
